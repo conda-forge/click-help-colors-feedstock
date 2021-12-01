@@ -1,16 +1,12 @@
-{% set name = "click-help-colors" %}
 {% set version = "0.9.1" %}
-{% set sha256 = "78cbcf30cfa81c5fc2a52f49220121e1a8190cd19197d9245997605d3405824d" %}
-
 
 package:
-  name: {{ name|lower }}
+  name: click-help-colors
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/c/click-help-colors/click-help-colors-{{ version }}.tar.gz
+  sha256: 78cbcf30cfa81c5fc2a52f49220121e1a8190cd19197d9245997605d3405824d
 
 build:
   noarch: python
@@ -22,11 +18,9 @@ requirements:
     - pip
     - python
     - setuptools
-
   run:
     - python
     - click
-
 test:
   imports:
     - click_help_colors

@@ -1,4 +1,4 @@
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: click-help-colors
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/click-help-colors/click-help-colors-{{ version }}.tar.gz
-  sha256: 463a848936c84549597767e24bc56166fee4b3ac2da33c5ac79562dc1402d46c
+  sha256: f4cabe52cf550299b8888f4f2ee4c5f359ac27e33bcfe4d61db47785a5cc936c
 
 build:
   noarch: python
